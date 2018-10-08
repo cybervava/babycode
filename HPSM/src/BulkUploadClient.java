@@ -43,7 +43,7 @@ public class BulkUploadClient {
 				HttpClient client = createHttpClient();
 				// LOGIN TO HPSM
 				String login_url = "";
-				sendPostLoginRequestToHEBdotCom(login_url, client);
+				sendPostLoginRequest(login_url, client);
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
@@ -52,7 +52,7 @@ public class BulkUploadClient {
 
 	
 
-	private static void sendPostLoginRequestToHEBdotCom(String url, HttpClient client)
+	private static void sendPostLoginRequest(String url, HttpClient client)
 			throws Exception {
 		// HttpClient client = new DefaultHttpClient();
 		HttpPost post = new HttpPost(url);
