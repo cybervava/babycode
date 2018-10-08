@@ -42,7 +42,7 @@ public class BulkUploadClient {
 			try {
 				HttpClient client = createHttpClient();
 				// LOGIN TO HPSM
-				String login_url = "https://www.heb.com/myaccount/userregistration.jsp?_DARGS=/myaccount/userregistration.jsp";
+				String login_url = "";
 				sendPostLoginRequestToHEBdotCom(login_url, client);
 			} catch (Exception ex) {
 				ex.printStackTrace();
